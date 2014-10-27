@@ -425,7 +425,7 @@ class Preview extends ViewGroup  implements SurfaceHolder.Callback {
                 }
             });
             
-            String apiKey = "49707858514b78764743716c47726d5845637066617a57454f3563326e6956474562526856523159506838";
+            String apiKey = ""; // TODO Set Your API Key
             String url = "https://api.apigw.smt.docomo.ne.jp/imageRecognition/v1/recognize?APIKEY=" 
             + apiKey + "&recog=product-all&numOfCandidates=1";
             asyncPost.execute(url, jdata);
