@@ -318,7 +318,7 @@ class Preview extends ViewGroup implements SurfaceHolder.Callback {
     }
 
     public void takePreviewData() {
-        if (!mProgressFlag) {
+        if (!mProgressFlag && mCamera != null) {
             mProgressFlag = true;
             mCamera.setPreviewCallback(editPreviewImage);
         }
